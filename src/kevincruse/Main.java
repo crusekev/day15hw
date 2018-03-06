@@ -55,6 +55,7 @@ public class Main {
         for(r=1;r<=8;r++) {
             System.out.printf("%-20s",names[r]);
             for(c=1;c<=4;c++) {
+                //possibly make the averages double here
                 if(r==8&&c==4) {
                     break;
                 }
@@ -62,7 +63,7 @@ public class Main {
             }
             System.out.println();
         }
-        //column 4 should have decimal places bc its average and the last row as well
+        //column 4 should be double bc its average and the last row as well
         double lowest=101.0; //301.0 for hw
         String lowname="";
         for(r=1;r<=7;r++) {
