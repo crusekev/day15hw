@@ -9,6 +9,10 @@ public class Main {
         final int COLUMNS=5;
         double[][]scores=new double[ROWS][COLUMNS];
         String[]names=new String[ROWS];
+        double med=0.0;
+        int mid1=0;
+        int mid2=0;
+        int size=5;
         double[]medianarray=new double[11]; //will only be one column
         int position=0;
         int c=0;
@@ -95,6 +99,9 @@ public class Main {
         System.out.println("\n\nmedian array sorted");
         for(r=1;r<=10;r++) {
             System.out.println(medianarray[r]);
+        }
+        if(scores.length%2==0) {
+            med=scores[scores.length/2]+scores[scores.length/2 - 1])/2;
         }
     }
     public static void bubblesort(String[]names,int length,double[][]scores,int length2) {
